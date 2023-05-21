@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Form } from 'formik';
 
-export const PhoneBookForm = styled.form`
+export const PhoneBookForm = styled(Form)`
   label {
     display: flex;
     align-items: center;
@@ -27,6 +28,17 @@ export const AddButton = styled.button`
   border-radius: 5px;
   outline: none;
   padding: 5px 15px;
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.57);
   color: white;
+  transition: background-color 200ms ease-out;
+
+  &:hover {
+    background-color: green;
+  }
+`;
+
+export const Message = styled.div`
+  font-size: 12px;
+  color: tomato;
+  margin-bottom: 4px;
 `;
